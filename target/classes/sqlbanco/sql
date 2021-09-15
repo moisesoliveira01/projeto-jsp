@@ -1,0 +1,16 @@
+CREATE DATABASE "database"
+    WITH OWNER = postgres
+    ENCODING = 'UTF-8'
+    TABLESPACE = pg_default
+    LC_COLLATE = 'Portuguese_Brazil.1252'
+    LC_CTYPE = 'Portuguese_Brazil.1252'
+    CONNECTION LIMIT = -1;
+
+CREATE TABLE public.model_login (
+	login varchar(200) NULL,
+	senha varchar(200) NULL,
+	CONSTRAINT model_login_un UNIQUE (login)
+);
+
+INSERT INTO public.model_login(login, senha)
+VALUES('admin', 'string123');
