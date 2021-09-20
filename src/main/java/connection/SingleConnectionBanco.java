@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 
 public class SingleConnectionBanco {
    
-	private static String banco = "jdbc:postgresql://localhost:5432/postgres?autoReconnect=true";
+    private static String banco = "jdbc:postgresql://localhost:5432/postgres?autoReconnect=true";
     private static String user = "postgres";
     private static String senha = "31560466";
     private static Connection connection = null;
